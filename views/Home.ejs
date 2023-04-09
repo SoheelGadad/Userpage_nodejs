@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event management</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <header>
+            <div class="navbar">
+                <img src="image/logo2.jpg.jpeg" alt="" width="130px" height="S50px">
+                <ul class="links">
+                    <li><a href="https://white2050devil.github.io/MorningStar_Events_website/">HOME</a></li>
+                    <li><a href="https://white2050devil.github.io/MorningStar_Events_website/Gallary/Gallery.html">GALLARY</a></li>
+                    <li><a href="https://white2050devil.github.io/MorningStar_Events_website/booking/birthday">EVENTS</a></li>
+                    <li><a href="https://white2050devil.github.io/MorningStar_Events_website/HALL INFO/Hall.html">HAllS</a></li>
+                    <li><a href="https://white2050devil.github.io/MorningStar_Events_website/Review/Review.html">REVIWES</a></li>
+                    <li><a href="https://white2050devil.github.io/MorningStar_Events_website/about us/aboutus.html">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="https://white2050devil.github.io/MorningStar_Events_website/Other service/otherservices.html">Other Services</a></li>
+                </ul>
+                <a href="/login" class="action_btn">LOGIN</a>
+    
+                <div class="toggle_btn">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </div>
+    
+            </div>
+        </header>
+</head>
+
+<body>
+    <br><br>
+    <!--slider-->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 8</div>
+            <img src="image/p1.jpg.jpg" alt="" height="600px" width="100%" >
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 8</div>
+            <img src="image/p2.jpg.jpg" alt="" height="600px" width="100%" >
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 8</div>
+            <img src="image/p7.jpg.jpg" alt="" height="600px" width="100%" >
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 8</div>
+            <img src="image/p12.jpg.jpg" alt="" height="600px" width="100%" >
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 8</div>
+            <img src="image/p13.jpg.jpg" alt="" height="600px" width="100%" >
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 8</div>
+            <img src="image/p9.jpg.jpg" alt="" height="600px" width="100%" >
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+            <img src="image/p10.jpg.jpg" alt="" height="600px" width="100%" >
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <img src="image/p11.jpg.jpg" alt="" height="600px" width="100%" >
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+<br>
+
+
+    <!--vendor section starts-->
+    <section class="vendor" id="vendor">
+        <div class="heading">
+            <h1>Our Services</h1>
+        </div>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/BIRTH1.jpg" alt="" width="100%" height="100%">
+                <div class="info">
+                    <h3>Birthday</h3>
+                    <p>A birthday is the day when a person was born.
+                         In many places, on a person's birthday, he or she celebrates with friends and family 
+                         at a party, where they eat cake or other foods, and get gifts.
+                         </p>
+                    <a href="pops/bday.html" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/W-2.jpg" alt="" width="100%" height="100%">
+                <div class="info">
+                    <h3>Wedding</h3>
+                    <p>Wedding practices in different cultures A wedding is a ceremony where 2 people are united in marriage. 
+                        Wedding traditions and customs vary greatly between cultures, ethnic groups, religions, countries, and social classes.</p>
+                    <a href="pops/wedding.html" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/RC-1.jpg" alt="" width="100%" height="100%">
+                <div class="info">
+                    <h3>Roce Ceremony</h3>
+                    <p>A Roce is a traditional Mangalorean Catholic ceremony whereby the bride and groom are annointed with 
+                        a mixture of coconut milk and oil and then blessed.
+                         This often takes place on the evening before the wedding.</p>
+                         <a href="pops/Roce c.html" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/E-5.jpg" alt="" width="100%" height="100%">
+                <div class="info">
+                    <h3>Engagement</h3>
+                    <p>An engagement or betrothal is the period of time between the declaration of acceptance of a marriage proposal and the marriage itself. 
+                        During this period, a couple is said to be fiancés, betrothed, intended, affianced, engaged to be married, or simply engaged.</p>
+                    <a href="pops/Engagement.html" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/BS-1.jpg" alt="" width="100%" height="100%">
+                <div class="info">
+                    <h3>Baby Shower</h3>
+                    <p>A baby shower is basically a party which is thrown to celebrate the impending birth of a new baby. 
+                        It's also a way for friends and family to help the new parents get everything they need. 
+                        After all, babies need tons of stuff, and the list can get quite expensive!</p>
+                    <a href="pops/baby shawer.html" class="btn">Read More</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="image/NC-1.jpg" alt="" width="90%" height="90%">
+                <div class="info">
+                    <h3>Name Ceremony</h3>
+                    <p>A naming ceremony is a stage at which a person or persons is officially assigned a name.
+                        The timing at which a name is assigned can vary from some days after birth to several months or many years.</p>
+                    <a href="pops/Name C.html" class="btn">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br><br><br>
+    <!--vendor section ends-->
+    <!--video starts-->
+<div class="video">
+    <video src="image/video.mp4" height="450px" width="100%" autoplay muted></video>
+</div>
+ <!--video ends -->
+ <br><br>
+
+        <!--quote starts-->
+        <div class="quote">
+            <div class="quote-text">
+                <span id="text">A Wedding is an event but marriage is life.</span>
+                <div class="quote-author">
+                    <span id="author">
+                        ---Myles Munore---
+                    </span>
+                </div>
+                <div class="button-container">
+                    <button id="newquote">New Quote</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--quote ends-->
+
+        <!--FOOTER STARTS-->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="logo.jpeg" alt="" class="logo" width="400px" height="200px"><br><br>
+                    <p> Subscribe for more information. </p>
+                </div>
+                <div class="col">
+                    <h3>Office <div class="underline"><span></span></div>
+                    </h3>
+                    <p>Sailia Building <br><br>
+                        Shop No. 13 <br><br>
+                        Tisk,Ponda.<br><br>
+                        Goa, PIN 403401<br><br> India <br><br>
+                    <p class="email-id">morningstar@gmail.com</p>
+                    <h4>+91-8007895609</h4>
+                </div>
+                <div class="col">
+                    <h3>Links <div class="underline"><span></span></div>
+                    </h3>
+                    <ul>
+                        <li><a href="">Home</a></li><br>
+                        <li><a href="">Services</a></li><br>
+                        <li><a href="">About Us</a></li><br>
+                        <li><a href="">Features</a></li><br>
+                        <li><a href="">Contacts</a></li><br>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Newsletter <div class="underline"><span></span></div>
+                    </h3>
+                    <form>
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email id" required>
+                        <i class="fa-solid fa-arrow-right"></i><button type="submit" >send</button></i>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!--FOOTER ENDS-->
+</body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    function togglepopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+}
+
+</script>
+
+</html>

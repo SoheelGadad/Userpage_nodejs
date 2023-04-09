@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+}
+
+body {
+    height: 200vh;
+    background: rgb(163, 163, 240);
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+    height: 1000px;
+    width: 1900px;
+    background: #000;
+    background-size: cover;
+}
+
+li {
+    list-style: none;
+
+}
+
+li a {
+        color: pink;
+        font-size: 18px;
+        text-transform: uppercase ;
+       
+    }
+
+a:hover {
+    background-color: palevioletred;
+}
+
+/*header*/
+header {
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: black;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+
+
+.heading {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align:middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1200px;
+    max-height: 1400px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+.vendor .box-container {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vendor .box-container .box {
+    flex: 1 1 20rem;
+    margin: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: .4rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .9);
+    height: 15rem;
+    cursor: pointer;
+
+}
+
+.vendor .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s all ease-in-out;
+}
+
+.vendor .box-container .box .info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    text-align: center;
+    transform: scale(1.3);
+    opacity: 0;
+}
+
+.vendor .box-container .box:hover .info {
+    transform: scale(1);
+    opacity: 50%;
+}
+
+.vendor .box-container .box:hover img {
+    transform: scale(1.3);
+}
+
+.vendor .box-container .box .info h3 {
+    font-size: 2.3rem;
+    color: white;
+    opacity: 1000%;
+    transition: 1s all ease-in-out;
+}
+
+.vendor .box-container .box .info p {
+    font-size: 1rem;
+    color: white;
+    padding: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border: .1rem black;
+    color: black;
+    font-size: 1.2rem;
+    padding: .4rem 2rem;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background: palevioletred;
+    border-color: palevioletred;
+    color: #fff;
+}
+
+.video{
+    border-width: 5px;
+    place-content: center;
+}
+
+
+/*Quote*/
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22px;
+    margin-left: 375px;
+    max-width: 600px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: palevioletred;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.quote-text {
+
+    font-size: 1.75rem;
+}
+
+.quote-author {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+}
+
+.button-container {
+    margin-top: 15px;
+    text-align: right;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #333;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    position: inherit;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 40px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 14px;
+    line-height: 8px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .fa {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fa {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fa {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 60px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: 3px;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
