@@ -2,7 +2,7 @@
 User Authentication with Express, Bcrypt, and Sessions
 This is a simple example application that demonstrates user authentication using the Express.js framework, the Bcrypt.js library for password hashing, and the Express-Session middleware for session management.
 
-#Getting Started
+# Getting Started
 To get started, clone this repository to your local machine and install the dependencies using NPM:
 
 $ git clone https://github.com/your-username/express-auth-example.git
@@ -22,7 +22,7 @@ To run the app, start the development server using the following command:
 $ npm start
 This will start the server on http://localhost:3000.
 
-#Routes
+# Routes
 The app has the following routes:
 
 / - the home page
@@ -33,5 +33,5 @@ The app has the following routes:
 User Authentication
 The app uses Bcrypt to hash and compare passwords, and Express-Session to manage user sessions. When a user signs up, their password is hashed using Bcrypt and stored in the database. When a user logs in, the app compares the hashed password in the database with the hashed password entered by the user. If the passwords match, the user is authenticated and a session is created.
 
-#License
+# License
 This project is licensed under the MIT License. See the LICENSE file for details.
